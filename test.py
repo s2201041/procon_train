@@ -41,7 +41,7 @@ worker = [
     #[[6,3],False],
 ]
 
-env = Env.MyEnv(building,worker)
+env = Env.MyEnv(building,worker,1)
 
 model = PPO('MlpPolicy', env, verbose=0)
 model = model.load("./logs/MyEnv"+str(28))

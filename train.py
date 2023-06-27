@@ -63,7 +63,7 @@ log_dir = './logs/'
 os.makedirs(log_dir, exist_ok=True)
 
 
-env = Env.MyEnv(building,worker)
+env = Env.MyEnv(building,worker,30)
 env = Monitor(env, log_dir, allow_early_resets=True)
 
 
